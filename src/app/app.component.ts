@@ -37,6 +37,12 @@ export class AppComponent {
       ((<HTMLTextAreaElement>document.getElementById("sum")).innerText="This is the sum of your ages: " + sum.toString());
 
     }
+  }
 
+  clean()
+  {
+    ((<HTMLTextAreaElement>document.getElementById("myAge")).value="");
+    ((<HTMLTextAreaElement>document.getElementById("momsAge")).value="");
+    ((<HTMLDivElement>document.getElementById("ageResult")).style.visibility="hidden");
   }
 }
